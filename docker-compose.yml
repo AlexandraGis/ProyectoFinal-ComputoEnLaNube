@@ -1,0 +1,17 @@
+version: '3'
+
+services: 
+  api:
+    container_name: resposteria 
+    restart: always
+    build: . 
+    ports:
+      - "5000:5000"
+    links: 
+      - mongo
+
+  mongo:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - "27018:27017"
