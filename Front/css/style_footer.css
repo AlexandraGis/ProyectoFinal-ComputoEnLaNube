@@ -1,0 +1,13 @@
+
+.footer{
+    color: white;
+    background-color: rgb(24, 27, 25);
+}
+footer .bx{
+    font-size: 30px;
+    width: 50px;
+    color: #ffffff;
+}
+footer li {
+    color: #ffffff;
+}

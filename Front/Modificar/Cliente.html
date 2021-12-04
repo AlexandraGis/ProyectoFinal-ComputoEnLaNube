@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pasteleria</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap"
+      rel="stylesh"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link href="/css/boot.min.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body onload="getClienteAPI()">
+    <!--header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="/Images/logo.png" alt="Logitipo principal" width="50" />
+        </a>
+        <a class="navbar-brand" href="index.html">Pasteleria</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Registrar
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/Registrar/Producto.html"
+                    >Producto</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Registrar/Pedido.html"
+                    >Pedido</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Existencias
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/Existencias/Pedidos.html"
+                    >Pedidos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Existencias/Clientes.html"
+                    >Clientes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Existencias/Productos.html"
+                    >Productos</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--fin de header-->
+    <br />
+    <br />
+    <!--Registro -->
+    <div class="container">
+      <div class="container_1">
+        <br />
+        <div class="col-md-4">
+          <label for="name" class="form-label">Nombre</label>
+          <input id="IP_Nombre" type="text" class="form-control" />
+          <!-- id="name" -->
+        </div>
+        <br />
+        <div class="col-md-4">
+          <label for="name" class="form-label">Apellido</label>
+          <input id="IP_Apellido" type="text" class="form-control" />
+        </div>
+        <br />
+        <div class="col-md-4">
+          <label for="name" class="form-label">Email</label>
+          <input id="IP_Correo" type="text" class="form-control" />
+        </div>
+        <br />
+        <div class="col-md-4">
+          <label for="name" class="form-label">Contraseña</label>
+          <input id="IP_Contraseña" type="password" class="form-control" />
+        </div>
+        <br />
+        <br />
+        <div class="col-12">
+          <br />
+          <button onclick="PutClienteAPI()" class="btn btn-dark">Enviar</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <br />
+      <br />
+      <!--Footer-->
+      <iframe
+        width="100%"
+        height="100%"
+        src="../footer.html"
+        scrolling="no"
+        frameborder="yes"
+      ></iframe>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script src="../js/usuarios.js"></script>
+    <script src="../js/general.js"></script>
+    <script>
+      (function () {
+        IsLogin();
+      })();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

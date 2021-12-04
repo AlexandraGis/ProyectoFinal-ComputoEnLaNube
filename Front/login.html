@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style_login.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!--BOOSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <!--HEADER-->
+    
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="login.html">
+            <img src="images/logo.png" alt="Logitipo principal" width="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                
+              </li>
+              <li class="nav-item">
+                
+              </li>
+            </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <a class="btn btn-outline-success my-2 my-sm-0" href="login.html">Login</a>
+            <a class="btn btn-outline-success my-2 my-sm-0" href="usuarios.html">Sing Up</a>
+          </form>
+      </nav>
+    
+
+    <!--FORMULARIO-->
+    <section class="contenido">
+        <div class="container_2"> <!-- class="container-fliud"-->
+            
+            <div class="row">
+                <div class="col-3"></div>
+                <div id="formulario" class="col-6 vh-100 d-flex justify-content-center">                  
+                    <form>
+                        <div class="form-group mx-auto ">
+                            <h1>Iniciar sesión</h1>
+                          <label for="exampleInputEmail1">Correo Electronico</label>
+                          <input type="email" class="form-control" id="IP_Correo" aria-describedby="emailHelp" placeholder="Correo">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Contraseña</label>
+                          <input type="password" class="form-control" id="IP_Contraseña" placeholder="Contraseña">
+                          <small id="emailHelp" class="form-text text-muted">¿Olvido Su Contraseña?</small>                          
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                        </div>
+                        <a class="btn btn-success"  onclick="login()">Entrar</a>
+                        <br>
+                        
+                        <div >
+                            <a href="index.html">
+                                <i class='bx bxl-facebook-circle'></i>
+                            </a>
+                            <a href="index.html">   
+                                <i class='bx bxl-google-plus-circle' ></i>
+                            </a>
+                            <a href="index.html">
+                                <i class='bx bxl-twitter' ></i>
+                            </a>                        
+                            <small id="emailHelp" class="form-text text-muted d-flex justify-content-center">Iniciar con otra cuenta</small>  
+                        </div>
+                      </form>
+                </div>
+                <div class="col-3"></div>
+            </div> <br>
+        </div>
+    </section>
+    <section>
+    <iframe width="100%" height="100%" src="footer.html" scrolling="no" frameborder="yes" ></iframe>
+    <!--JAVASCRIPT-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script src="../js/general.js"></script>
+    <script src="./js/usuarios.js"></script>
+
+</body>
+</html>

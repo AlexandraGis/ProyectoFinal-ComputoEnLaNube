@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>Pasteleria</title>
+  </head>
+
+  <body>
+    <!--header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="Images/logo.png" alt="Logitipo principal" width="50" />
+        </a>
+        <a class="navbar-brand" href="index.html">Pasteleria</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#ProductosTempo">Productos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Registrar
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="/Registrar/Producto.html">Producto</a></li>
+                <li><a class="dropdown-item" href="/Registrar/Pedido.html">Pedido</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+            Existencias
+            </a>
+            <ul
+              class="dropdown-menu"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item" href="/Existencias/Pedidos.html"
+                  >Pedidos</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="/Existencias/Clientes.html"
+                  >Clientes</a
+                >
+              </li>
+              <li>
+                  <a class="dropdown-item" href="/Existencias/Productos.html"
+                    >Productos</a
+                  >
+                </li>
+            </ul>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--fin de header-->
+
+    <!--Portada carosel-->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide img-carr"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/mora.jpg" class="d-block w-100" alt="Portada 1" />
+          <div class="carousel-caption d-none d-md-block">
+            <h1><font color="white" class="centrado white" >Somos una marca 100% Mexicana</font></h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Images/leche_chocolate.jpg"
+            class="d-block w-100 img-carr"
+            alt="Portada 2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <p class="display-6">Frutas de temporada</p>
+            <p class="h6 lead">Siempre con la mejor calidad</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Images/pan.jpg"
+            class="d-block w-100 img-carr"
+            alt="Portada 3"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <font color="black" class="display-6">Promociones de octubre</font>
+            <font color="black">
+              <p class="h6 lead">ya disponible!</p>
+            </font>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--fin de carosel-->
+
+    <!--Descripcion-->
+    <div class="description">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 text-center">
+            <h3>¡Hola!</h3>
+            <p style="text-align: justify">
+              Te damos la bienvenida a nuestra pagina dispuesta
+              para cumplir con tus expectativas, disfruta de un momento
+              agradable donde podras adquirir los pedidos de tu interes y
+              permitirte deleitarte con nuestros productos.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!--fin de descripcion-->
+    <!--main-->
+    <main>
+      <section id="ProductosTempo">
+      <div class="container">
+        <div class="row">
+          <h3 style="text-align: center">
+            ¿Que servicios puedes encontrar con nosotros?...
+          </h3>
+        </div>
+      </div>
+      <br /><br />
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-3 text-center">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Third group"
+              ></div>
+              <img src="Images/pastel_blanco3.jpg" alt="imagen1" style="width: 150px" />
+              <h3>Pasteles de boda</h3>
+            </div>
+            <div class="col-12 col-sm-3 text-center">
+              <img
+                src="Images/pay_1.jpg"
+                alt="imagen1"
+                style="width: 150px"
+              />
+              <h3>Pays de temporada</h3>
+            </div>
+            <div class="col-12 col-sm-3 text-center">
+              <img
+                src="Images/tarta.jpg"
+                alt="imagen1"
+                style="width: 150px"
+              />
+              <h3>Tartas de fruta</h3>
+            </div>
+            <div class="col-12 col-sm-3 text-center">
+              <img src="Images/pastelito_1.jpg" alt="imagen1" style="width: 150px" />
+              <h3>Cupcakes</h3>
+            </div>
+            <div class="col-12 col-sm-3 text-center">
+              <img src="Images/galletas.jpg" alt="imagen1" style="width: 150px" />
+              <h3>Galletas</h3>
+            </div>
+            <div class="col-12 col-sm-3 text-center">
+              <img src="Images/choc.jpg" alt="imagen1" style="width: 150px" />
+              <h3>Pasteles de chocolate</h3>
+            </div>
+            <div class="col-12 col-sm-3 text-center">
+              <img
+                src="Images/queso.jpg"
+                alt="imagen1"
+                style="width: 150px"
+              />
+              <h3>Cheescake</h3>
+            </div>
+            <div class="col-12 col-sm-3 text-center">
+              <img src="Images/pastelito_10.jpg" alt="imagen1" style="width: 150px" />
+              <h3>Pudín</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br />
+    <br />
+    <!--Presentación-->
+  <section>
+    <div class="contenedor">
+      <img src="Images/pastelito_5.jpg" class="d-block w-100" alt="Portada 1" />
+        <div class="texto-encima"></div>
+        <h1>
+        <font color="white" class="centrado white" >Historia</font></h1>
+      </div>
+    </div>
+    <div>
+          <div class="description">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-12 text-center">
+                  <h3>Nosotros...</h3>
+                  <p style="text-align: justify">
+                    En los últimos siglos, muchos reposteros han dejado de usar levadura para añadir huevo y harinas refinadas a sus preparaciones.
+                    Adicionalmente, se comenzó con la confección de postres como los merengues, realizados por un pastelero suizo en 1720, y los pastelillos franceses.
+                    Como cualquier otro tipo de prácticas culinarias, 
+                    la historia de la repostería demuestra el porqué esta gran práctica se ha convertido en una de las disciplinas más respetadas y prestigiosas de todo el mundo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+    </div>
+    <div class="contenedor">
+      <img src="Images/frutas_4.jpg" class="d-block w-100" alt="Portada 1" />
+        <div class="texto-encima"></div>
+        <h1>
+        <font color="white" class="centrado white" >Misión</font></h1>
+      </div>
+    </div>
+    <div>
+          <div class="description">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-sm-12 text-center">
+                  <h3>Nosotros...</h3>
+                  <p style="text-align: justify">
+                    En los últimos siglos, muchos reposteros han dejado de usar levadura para añadir huevo y harinas refinadas a sus preparaciones.
+                    Adicionalmente, se comenzó con la confección de postres como los merengues, realizados por un pastelero suizo en 1720, y los pastelillos franceses.
+                    Como cualquier otro tipo de prácticas culinarias, 
+                    la historia de la repostería demuestra el porqué esta gran práctica se ha convertido en una de las disciplinas más respetadas y prestigiosas de todo el mundo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+    </div>
+</section>
+
+<br>
+<br>
+
+    <!--Fin de recetas-->
+
+    <!--Footer-->
+    <iframe width="100%" height="100%" src="footer.html" scrolling="no" frameborder="yes" ></iframe>
+    <!--Link de js de bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
