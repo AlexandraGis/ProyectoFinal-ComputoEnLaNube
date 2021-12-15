@@ -14,7 +14,7 @@ function login() {
         //console.log(response.token);
         SaveUser(response.token);
         console.log(Contraseña);
-        window.location.href = "/registrar/pedido.html";
+        window.location.href = "./index.html";
       } else {
         alert("Usuario o contraseña incorrecta");
       }

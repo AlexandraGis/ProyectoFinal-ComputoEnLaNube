@@ -5,14 +5,14 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ChecoYS/reposteria"
+    "url": "git+https://github.com/AlexandraGis/ProyectoFinal-ComputoEnLaNube"
   },
   "author": " <reposteria>",
   "license": "",
   "bugs": {
-    "url": "https://github.com/ChecoYS/reposteria/issues"
+    "url": "https://github.com/AlexandraGis/ProyectoFinal-ComputoEnLaNube"
   },
-  "homepage": "https://github.com/ChecoYS/reposteria",
+  "homepage": "https://github.com/AlexandraGis/ProyectoFinal-ComputoEnLaNube",
   "scripts": {
     "start": "node --max-http-header-size 15000 server.js",
     "start-dev": "nodemon ./server.js"
