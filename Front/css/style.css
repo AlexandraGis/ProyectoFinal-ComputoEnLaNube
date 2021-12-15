@@ -240,7 +240,7 @@ section {
 }
 
 .col-img {
-  background-image: url(../Images/Pastel1.jpg);
+  background-image: url(.././Images/Pastel1.jpg);
   background-position: center;
   background-size: cover;
   min-height: 500px;

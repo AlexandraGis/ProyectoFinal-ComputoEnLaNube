@@ -111,10 +111,6 @@ function getPedidosAPI() {
           "\")'>Eliminar</button>" +
           "</td>" +
           "<td>" +
-          "<button class='btn btn-primary' onclick='PutClientesAPI(\"" +
-          response[i].id +
-          "\")'>Editar</button>" +
-          "</td>" +
           "</tr>";
 
         /* We add the table row to the table body */
@@ -211,10 +207,6 @@ function getProductosAPI2() {
           "\")'>Eliminar</button>" +
           "</td>" +
           "<td>" +
-          "<button class='btn btn-primary' onclick='PutClientesAPI(\"" +
-          response[i].id +
-          "\")'>Editar</button>" +
-          "</td>" +
           "</tr>";
 
         /* We add the table row to the table body */
